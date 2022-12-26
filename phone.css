@@ -1,0 +1,199 @@
+:root {
+    --p-color: #d51a52;
+}
+
+.text-box h1 {
+    font-size: 50px;
+    letter-spacing: 1mm;
+}
+
+.header img {
+    display: inline-block;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 0px 0px 46px;
+}
+
+
+.navlinks ul li {
+    display: block;
+    padding: 10px;
+}
+
+.navlinks ul {
+    padding: 30px;
+}
+
+.navlinks {
+    z-index: 2;
+    position: absolute;
+    background: var(--p-color);
+    height: 40vh;
+    width: 100%;
+    top: -40vh;
+    text-align: left;
+    transition: .7s;
+}
+
+
+
+
+
+/* ----- About Us ----- */
+
+
+
+.aboutus{
+    top: 11vh;
+}
+.container {
+    flex-wrap: wrap;
+    margin: 0px 20px;
+}
+
+.text-area-aboutus {
+    padding: 40px 0px 105px 0px;
+    width: 85%;
+}
+
+.tital-aboutus h1 {
+    font-size: 49px;
+}
+
+.aboutus img {
+    height: 430px;
+    width: 315px;
+    box-shadow: -15px -10px var(--p-color);
+}
+
+
+
+
+/* ----- Services -----  */
+
+
+.container-sevices {
+    flex-direction: column;
+    align-items: center;
+}
+
+.tital-services h1 {
+    font-size: 49px;
+    font-family: "Teko";
+}
+
+.box-services {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.box-services h4 {
+    display: none;
+}
+
+.services {
+    top: 100px
+}
+
+
+
+
+
+/* ----- Join Us ----- */
+
+
+.tital-joinus h1 {
+    font-size: 49px;
+}
+
+.joinus {
+    top: 100px;
+}
+
+
+
+
+
+/* ----- Contact Us -----  */
+
+
+.message {
+    width: 100%;
+    padding-right: 0px;
+}
+
+.container-message {
+    transform: none;
+}
+
+.container-message h3 {
+    font-size: 30px;
+}
+
+.container-message img {
+    left: -10px;
+}
+
+.container-message p {
+    width: 90%;
+    left: 14px;
+    font-weight: 100;
+    color: rgb(187, 187, 187);
+}
+
+.contactus {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 35px;
+    top: 200px;
+}
+
+.tital-contactus h1 {
+    font-size: 49px;
+}
+
+.container-contactus {
+    width: fit-content;
+}
+
+
+
+
+
+/* ----- Footer ----- */
+
+
+footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 160px;
+}
+
+.first-row {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second-row {
+    justify-content: center;
+}
+
+.container-footer {
+    padding: 15px 50px 0px 50px;
+}
+
+.icons-footer {
+    padding: 10px 50px 8px 50px;
+}
+
+.container-footer a {
+    padding: 0px 4px;
+}
+
+.copyright {
+    padding: 0px 50px 20px 50px;
+}
+
+.copyright p {
+    text-align: center;
+}

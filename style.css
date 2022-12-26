@@ -1,0 +1,572 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+}
+
+.select::selection {
+    background-color: #d51a52ba;
+    color: white;
+}
+
+:root {
+    --p-color: #d51a52;
+}
+
+.header {
+    background-image: linear-gradient(rgba(31, 31, 31, 0.7), rgba(31, 31, 31, 0.7)), url(images/mainbackground.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+/* ----- Navbar ----- */
+
+header {
+    display: flex;
+    width: 100%;
+    height: 9vh;
+    padding: 1% 0%;
+    justify-content: space-evenly;
+    align-items: center;
+    /* position: fixed;
+    background-color: rgba(0, 0, 0, 0.795); */
+}
+
+header img {
+    padding-right: 241px;
+    padding-bottom: 2px;
+    height: 60px;
+    width: 185px;
+    cursor: pointer;
+}
+
+header .fa {
+    display: none;
+    font-size: 22px;
+}
+
+header .fa-bars {
+    display: none;
+}
+
+@media (max-width:1025px) {
+    header .fa-bars {
+        display: inline-block;
+        position: relative;
+        right: 945px;
+        position: sticky;
+        padding-left: 30px;
+    }
+
+    header .fa-xmark {
+        display: inline-block;
+        position: relative;
+        right: 945px;
+        position: sticky;
+        padding-left: 30px;
+        top: 20px;
+    }
+}
+
+.navlinks ul {
+    list-style: none;
+    padding-left: 120px;
+    padding-top: 13px;
+}
+
+.navlinks ul li {
+    color: white;
+    display: inline-block;
+    padding: 0px 12px;
+
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+    font-family: "Poppins";
+}
+
+.navlinks ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #d51a52;
+    display: block;
+    transition: .5s;
+}
+
+.navlinks ul li:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+/* ----- Main Tital ----- */
+
+
+
+.text-box {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    bottom: 19%;
+    transform: translate(6%, -50%);
+    text-align: center;
+}
+
+.text-box p {
+    font-family: "Poppins";
+    letter-spacing: 1mm;
+    font-weight: 700;
+}
+
+.text-box h1 {
+    font-family: "Oswald";
+    font-size: 80px;
+    letter-spacing: 3mm;
+    font-weight: bolder;
+}
+
+.text-box h1::selection {
+    background-color: #d51a52ba;
+}
+
+.text-box span {
+    color: var(--p-color);
+}
+
+.text-box a {
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 2px solid white;
+    position: relative;
+    top: 25px;
+    transition: .5s;
+    font-family: 'Poppins';
+}
+
+.text-box a:hover {
+    border: 2px solid var(--p-color);
+    background-color: var(--p-color);
+}
+
+
+
+
+
+/* ----- About Us ----- */
+
+
+
+.aboutus img {
+    height: 678px;
+    width: 510px;
+    box-shadow: -15px -10px var(--p-color);
+}
+
+.aboutus {
+    position: relative;
+    top: 25vh;
+}
+
+.container {
+    display: flex;
+    margin: 0px 50px;
+    justify-content: center;
+}
+
+.text-area-aboutus {
+    padding: 150px 11px 150px 24px;
+    width: 515px;
+}
+
+.tital-aboutus p {
+    color: var(--p-color);
+    font-family: "Teko";
+    position: relative;
+    left: 0px;
+    font-size: 23px;
+}
+
+.tital-aboutus h1 {
+    font-size: 77px;
+    font-family: "Teko";
+}
+
+.text-aboutus {
+    font-family: "Barlow";
+    padding: 20px 0px;
+}
+
+
+
+
+
+/* ----- Services ----- */
+
+
+
+.services {
+    position: relative;
+    top: 300px;
+    text-align: center;
+}
+
+.tital-services h1 {
+    font-size: 76px;
+    font-family: "Teko";
+}
+
+.tital-services p {
+    color: var(--p-color);
+    font-family: "Teko";
+    position: relative;
+    font-size: 23px;
+}
+
+.text-services {
+    font-family: "Barlow";
+    padding: 0px 10px;
+}
+
+
+.container-services {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    margin: 0px 30px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+@media(max-width:1025px) {
+    .container-services {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.box-services {
+    width: 280px;
+    height: 380px;
+    background-color: rgb(49, 49, 49);
+    transition: .3s;
+}
+
+.box-services:hover {
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 70%)
+}
+
+.box-services img {
+    position: relative;
+    top: 7%;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.box-services h3 {
+    font-family: "teko";
+    font-size: 30px;
+    padding-top: 31px;
+    cursor: pointer;
+}
+
+.box-services p {
+    font-family: "Ubuntu";
+    padding: 0px 10px;
+}
+
+.box-services h4 {
+    padding: 27px 10px;
+    position: relative;
+    top: 27px;
+    background-color: #d51a52;
+}
+
+.box-services h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 00%;
+    height: 100%;
+    background: #00000020;
+    z-index: 1;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.box-services h4:hover::before {
+    width: 100%;
+}
+
+.box-services h4 a {
+    text-decoration: none;
+    font-family: "Teko";
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 6;
+}
+
+
+
+
+
+/* ----- Join Us ----- */
+
+
+
+.joinus {
+    position: relative;
+    top: 400px;
+    background-image: linear-gradient(rgba(31, 31, 31, 0.7), rgba(31, 31, 31, 0.7)), url(images/joinus.jpg);
+    height: 85vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center
+}
+
+.tital-joinus {
+    position: relative;
+    padding: 100px 59px;
+}
+
+.tital-joinus p {
+    display: inline-block;
+    color: var(--p-color);
+    font-family: "Teko";
+    position: relative;
+    font-size: 23px;
+}
+
+.tital-joinus h1 {
+    font-size: 76px;
+    font-family: Teko;
+}
+
+.tital-joinus h1 span {
+    color: var(--p-color);
+}
+
+.btn a {
+    text-decoration: none;
+    padding: 20px 50px;
+    border: 2px solid white;
+    position: relative;
+    top: -50px;
+    left: 60px;
+    transition: .5s;
+    font-family: 'Poppins';
+}
+
+.btn a:hover {
+    border: 2px solid var(--p-color);
+    background-color: var(--p-color);
+}
+
+
+
+
+
+/* ----- Contact Us ----- */
+
+
+
+.contactus {
+    position: relative;
+    top: 500px;
+    display: flex;
+    margin: 0px 50px;
+    justify-content: center;
+    padding-bottom: 26px;
+}
+
+.message {
+    width: 523px;
+    padding-right: 50px;
+    display: inline-block;
+}
+
+
+.container-message {
+    padding: 20px;
+    background-color: rgb(41, 41, 41);
+    font-style: italic;
+    transform: skew(-5deg);
+
+}
+
+.container-message h3 {
+    font-family: "Oswald";
+    font-size: 35px;
+}
+
+.container-message h3 span {
+    color: var(--p-color);
+}
+
+.container-message p {
+    font-family: "Oswald";
+    position: relative;
+    bottom: 60px;
+    width: 80%;
+    left: 34px;
+    font-weight: 100;
+    color: rgb(187, 187, 187);
+}
+
+
+.container-message img {
+    position: relative;
+    left: 5px;
+    opacity: .35;
+}
+
+
+
+.contact-detailes {
+    padding: 60px 0px;
+}
+
+.container-contactus p {
+    color: var(--p-color);
+    font-family: "Teko";
+    position: relative;
+    font-size: 23px;
+}
+
+.container-contactus h1 {
+    font-size: 76px;
+    font-family: Teko;
+}
+
+.text-contactus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-contactus {
+    display: flex;
+    padding: 10px 0px;
+    /* justify-content: center; */
+    position: relative;
+    align-items: center;
+    left: 10px
+}
+
+.box-contactus span {
+    font-family: "Ubuntu";
+    font-size: 20px;
+}
+
+.box-contactus img {
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+
+
+
+/* ----- Footer ----- */
+
+
+footer {
+    display: flex;
+    position: relative;
+    top: 500px;
+    background-color: rgb(29, 29, 29);
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.first-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.second-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.container-footer {
+    padding: 15px 90px 0px 90px;
+    font-family: "Teko";
+}
+
+.container-footer a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0px 8px;
+}
+
+.container-footer a span {
+    color: rgb(135, 135, 135);
+}
+
+.container-footer a .text:hover {
+    color: rgb(199, 199, 199);
+}
+
+.icons-footer {
+    padding: 15px 90px 0px 90px;
+}
+
+.icons-footer img {
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+}
+
+.icons-footer img:hover {
+    position: relative;
+    bottom: 2px;
+}
+
+.copyright {
+    padding: 0px 90px 20px 90px;
+}
+
+.copyright p {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0px 8px;
+    color: rgb(109, 109, 109);
+    letter-spacing: .1mm;
+    font-family: "Teko";
+}
+
+.copyright p span {
+    color: var(--p-color);
+}
